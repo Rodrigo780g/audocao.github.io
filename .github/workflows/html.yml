@@ -4,6 +4,10 @@ on:
   push:
     branches: [ "main" ] # Dispara o workflow quando houver um push na branch principal (você pode alterar)
 
+permissions:
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
